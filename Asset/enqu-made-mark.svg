@@ -1,0 +1,53 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ENQU MADE emblem</title>
+  <desc id="desc">Ethiopian artisan mark — jebena coffee pot with cross motif</desc>
+  <defs>
+    <linearGradient id="fieldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="threadGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="1" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.4"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Shield background -->
+  <path d="M30 2 C16 2 4 14 4 28 L4 56 C4 66 14 74 28 74 L32 74 C46 74 56 66 56 56 L56 28 C56 14 44 2 30 2 Z" fill="url(#fieldGrad)" filter="url(#softShadow)"/>
+
+  <!-- Inner accent ring -->
+  <path d="M30 6 C24 6 12 16 12 26 L12 48 C12 56 18 62 26 62 L34 62 C42 62 48 56 48 48 L48 26 C48 16 36 6 30 6 Z" fill="none" stroke="#FBBF24" stroke-width="1.2" opacity="0.6"/>
+
+  <!-- Jebena (coffee pot) -->
+  <g transform="translate(5 8)">
+    <!-- Body -->
+    <path d="M9 20 C6 20 4 24 4 30 L4 40 C4 46 10 52 16 52 L22 52 C28 52 34 46 34 40 L34 30 C34 24 32 20 28 20 Z" fill="#F59E0B"/>
+    <!-- Neck -->
+    <path d="M13 18 C11 18 9 16 9 14 L9 10 C9 6 13 2 15 2 L19 2 C21 2 23 6 23 10 L23 14 C23 16 21 18 19 18 Z" fill="#374151"/>
+    <!-- Handle -->
+    <path d="M31 26 C33 26 35 28 35 32 L35 38 C35 42 31 46 27 46 C23 46 19 42 19 38 L19 32 C19 28 21 26 23 26 Z" fill="none" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Spout -->
+    <path d="M1 30 C-1 30 -2 28 -2 26 L-2 20 C-2 16 0 14 2 14 L5 14 C9 14 11 16 11 20 L11 26 C11 30 9 32 5 32 Z" fill="#EF4444"/>
+    <!-- Bands -->
+    <path d="M4 34 L34 34" stroke="#FBBF24" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M6 28 L32 28" stroke="#EF4444" stroke-width="0.8" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- Ethiopian cross motif -->
+  <g transform="translate(38 4)">
+    <path d="M6 2v16 M14 2v16 M0 10h14 M0 18h14" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="8" cy="8" r="1.5" fill="#EF4444"/>
+    <circle cx="8" cy="18" r="1.5" fill="#EF4444"/>
+  </g>
+</svg>
